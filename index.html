@@ -1,104 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<h1 style="text-align: center; background-color: palevioletred;">Show tickets</h1>
 
-<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/043/555/242/non_2x/realistic-3d-cinema-film-strip-in-perspective-isolated-on-blue-background-template-cinema-festival-movie-design-cinema-film-strip-for-ad-poster-presentation-show-brochure-banner-or-flyer-vector.jpg);">
-	<style>
-		.container{
-			text-align: center;
-			margin-top: 50px;
+
+    <style>
+        .container{
+            text-align: center;
+            margin-top: 50px;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
             background-color: rgba(0, 0, 0.6, 0.6);
-		}
-		label{
-			color: whitesmoke;
-		}
-	</style>
+            width: 30%;
+            position: absolute;
+            right: 150px;
+        }
 
-	<body>
-		
-	<div class="container">
-	<details ontoggle="msg()">
-		<summary style="background-color: palevioletred;"> - Personal Information - </summary>
+        .container2{
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: rgba(0, 0, 0.6, 0.6);
+            width: 100%;
+            position: absolute;
+            right: 0.4px;
+        }
+        label{
+            color: whitesmoke;
+        }
+    </style>
 
-		<form>
-			<label>Name</label>
-				<input type="text" id="name" class="form-control" required placeholder="Name">
-			<label>Phone Number</label>
-				<input type="text" id="Number" class="form-control" required placeholder="XXXX XXX XXXX"><br>
-			<button type="submit" class="btn btn-outline-danger" onclick="sub()">Submit</button>
-		</form>
-	</details><br>
+    <body style="background-image:url(https://images.unsplash.com/photo-1515165562839-978bbcf18277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+        
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-	<details ontoggle="msg()">
-		<summary style="background-color: palevioletred;"> - Ticket pricing - </summary>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Auckland_transport_train_logo.png" style="width: 40px; float: right;"></a>
+        <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">W.I.P</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">W.I.P</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">W.I.P</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-		<form>
-			<label>Seat</label>
-				<select class="form-select" id="seat">
-					<option value="1200">Upper Seats</option>
-					<option value="1800">Middle seats</option>
-					<option value="2500">Lower seats</option>\
-					<option value="4000">VIP (+ Backstage access)
-				</select>
-			<label>Choose an option</label>
-				<select class="form-select" id="choose"><br>
-					<option value="1">Regular</option>
-					<option value="0.95">Student</option>
-					<option value="0.80">Senior</option>
-				</select><br>	
+<div class="p-2 text-white text-center" style="background-color: indianred;">
+  <h1>Train Tickets</h1>
+  <p></p>
+</div>
+        
+    <div class="container">
+      <div class="container1">
+  
+            <form>
+            <label>LEAVING FROM</label>
+                <select class="form-control" id="From">
+                    <option value="0">Quezon Ave</option>
+                    <option value="0">GMA Kamuning</option>      
+                    <option value="3">Araneta - Cubao</option>   
+                    <option value="3">Santolan</option>   
+                    <option value="7">Ortigas</option>  
+                </select>
+                
+            <label>GOING TO</label>
+            <select class="form-control" id="To">
+                    <option value="7">Shaw Blvd.</option>
+                    <option value="7">Boni</option>      
+                    <option value="11">Guadalupe</option>   
+                    <option value="11">Buendia</option>   
+                    <option value="11">Ayala</option>  
+            </select>
+             
+        </form>
+    </details><br>
+    </div>
 
-			<button type="submit" class="btn btn-outline-danger" onclick="bus()">Submit</button>
+    <div class="container2">
+        <form>
+                <label>Choose an option</label>
+                <select class="form-select" id="choose"><br>
+                    <option value="1.5">Regular</option>
+                    <option value="1">Student</option>
+                    <option value="0.85">Senior</option>
+                </select>
+            <label>Time</label>
+                <select class="form-select" id="time"><br>
+                    <option>4AM</option>
+                    <option>12PM</option>
+                    <option>7PM</option>
+                </select><br>
 
-		</form>
-	</details><br>
+            <button type="submit" class="btn btn-warning" onclick="bus()">Submit</button>
+        </div>
 
-	<details ontoggle="ty()">
-		<summary style="background-color: palevioletred;"> - Ticket - </summary>
-		<label>Email</label>
-				<input type="text" id="EM" class="form-control" required placeholder="exampleemail@email.com">
-		<img src="https://static.wixstatic.com/media/257c3a_82cc62cc42de4f949178896aa2a09478~mv2_d_6868_3691_s_4_2.png/v1/fill/w_625,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/257c3a_82cc62cc42de4f949178896aa2a09478~mv2_d_6868_3691_s_4_2.png">
-		<button type="submit" class="btn btn-outline-danger" onclick="tt()">Purchase</button>
-	</details><br>
+        </form>
+    </details><br>
 
-</div>	
-
-
+</div>  
+<br><br>
+  <img src="https://www.sumitomocorp.com/mideast-africa/-/media/Images/hq/news/topics/2023/20230531/04-2_en.png?h=515&iar=0&w=915" style="width: 750px; border-radius: 25px; position: absolute; left: 85px; top: 205px;"></img>
 </body>
 
-	<script>
-		function sub(){
-			var name = document.getElementById("name").value;
-			window.alert("Thank you " + name + "!" + " Please proceed to: Ticket Pricing")
-		}
-		function bus(){
-			var seats = document.getElementById("seat").value;
-			var choose = document.getElementById("choose").value;
-			var price = Number(seats) * Number(choose)
-			window.alert("Your ticket price is: " + price +"₱." + " Please proceed to the final section")
-		}
-		function tt(){
-			var email = document.getElementById("EM").value;
-			var name = document.getElementById("name").value;
-			window.alert("Thank you for purchasing" + name + "!" + " Your ticket was sent to your email; " + email);
-		}
-		function ty(){
-			window.alert("Please confirm what email to be sent");
-		}
+    <script>
+
+        function bus(){
+            var From = document.getElementById("From").value;
+            var To = document.getElementById("To").value;
+            var Age = document.getElementById("choose").value;
+            var price = Number(From) + Number(To) * Number(Age);
+            window.alert("Your ticket price is: " + price +"₱." + " Please proceed to the final section")
+        }
+        function tt(){
+            var email = document.getElementById("EM").value;
+            var name = document.getElementById("name").value;
+            window.alert("Thank you for purchasing" + name + "!" + " Your ticket was sent to your email; " + email);
+        }
+        function ty(){
+            window.alert("Please confirm what email to be sent");
+        }
 
 
-	
+    
 
-	</script>
+    </script>
 
 </html>
